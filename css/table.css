@@ -1,23 +1,38 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
 table {
     width: 50%;
     margin: 3px;
-    border-collapse: collapse;
+    border-collapse: separate;
 }
 
 table tr:first-child td {
     font-weight: bold;
     white-space: nowrap;
     text-align: center;
-    padding: 4px;
+    border: 1px solid #c6c8ca;
+    border-radius: 10px;
+    background-color: #d6d8d9;
+    padding: 7px;
 }
-
-table tr {
-    border-bottom: 1px solid black;
+table tr:first-child td:hover {
+    background-color: #e2e3e5;
 }
 
 table td {
-    border: none;
-    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table td:hover {
+    background-color: #e2e3e5;
+}
+
+.phone {
+    white-space: nowrap;
 }
 
 .about {
@@ -27,27 +42,33 @@ table td {
     -webkit-box-orient: vertical;
 }
 
-.phone {
-    white-space: nowrap;
-}
-
-.sort-button {
-
-}
-
 #edit_string {
     position: absolute;
     left: 51%;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 2px solid #c6c8ca;
     padding: 4px;
     clear: both;
+    background-color: #e2e3e5;
 }
 
 .form-input-editing {
-    text-align:right;
+    text-align: right;
+}
+
+.func-editing-buttons {
+    float: right;
+    margin-top: 2px;
+}
+
+button {
+    padding: 3px;
+    font-family: Verdana, sans-serif;
+    margin: 1px;
 }
 
 .input-text {
     margin: 2px;
+    padding: 3px;
+    font-family: Verdana, sans-serif;
 }

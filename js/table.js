@@ -59,14 +59,6 @@ function makeLastName(lastName, string) {
     column.className = "lastname";
 }
 
-// color's data will provide as color circle.
-function makeColorCircle(color) {
-    var div = document.createElement('div');
-    div.className = 'color-circle';
-    div.style.backgroundColor = color;
-    return div;
-}
-
 // make field in table from string data, also
 //  for field "name" make other column for last name,
 //  for field "eyeColor" make color providing
@@ -228,7 +220,7 @@ function editGlobalData(column, id, newValue) {
     }
 }
 
-// make table header with function sorting on click concrete header
+// make table header with function sorting on click specific header
 function makeHeadTable(table) {
     var head = document.createElement('tr');
     for (let field of allHeaders) {
@@ -295,14 +287,14 @@ function pagination(input, size) {
     }, []);
 }
 
-// paging function call and get data from concrete page
+// paging function call and get data from specific page
 function getDataFromPage(page, data) {
     let pages = Math.ceil(data.length / 10);
     let paginated = pagination(data, 10);
     return paginated[page-1];
 }
 
-// make table from data on concrete page
+// make table from data on specific page
 function makeTable(data = globalData, page = globalPage) {
     let tableContainer = document.getElementById('table_container');
     tableContainer.innerHTML = '';
